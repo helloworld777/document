@@ -1,0 +1,8 @@
+public boolean dispatchTouchEvent(MotionEvent event){
+	boolean consume=false;
+	if(onInterceptTouchEvent(event)){
+		consume=onTouchEvent(event);
+	}else{
+		consume=child.dispatchTouchEvent(event);
+	}	
+}

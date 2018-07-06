@@ -66,3 +66,10 @@ $ git push [remote] --force
 
 # 推送所有分支到远程仓库
 $ git push [remote] --all
+
+
+git init
+git add README.md
+git commit -m "first commit"
+git remote add origin https://github.com/helloworld777/document.git
+git push -u origin master

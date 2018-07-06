@@ -1,0 +1,1 @@
+启动Activity的请求会由Instrumentation来处理，然后它通过Binder向AMS发请求，AMS内部维护者一个ActivityStack并负责栈内的Activity的状态同步，AMS通过ActivityThread去同步Activity的状态从而完成生命周期方法的调用

@@ -1,0 +1,453 @@
+Classfile /C:/Users/Administrator/Desktop/²©¿Í/jvm/AnnoTest.class
+  Last modified 2018-6-22; size 3601 bytes
+  MD5 checksum b75561030f688f552def3bd3575ad200
+  Compiled from "AnnoTest.java"
+public class com.test.AnnoTest
+  minor version: 0
+  major version: 52
+  flags: ACC_PUBLIC, ACC_SUPER
+Constant pool:
+    #1 = Class              #2            // com/test/AnnoTest
+    #2 = Utf8               com/test/AnnoTest
+    #3 = Class              #4            // java/lang/Object
+    #4 = Utf8               java/lang/Object
+    #5 = Utf8               i
+    #6 = Utf8               I
+    #7 = Utf8               <clinit>
+    #8 = Utf8               ()V
+    #9 = Utf8               Code
+   #10 = Fieldref           #1.#11        // com/test/AnnoTest.i:I
+   #11 = NameAndType        #5:#6         // i:I
+   #12 = Utf8               LineNumberTable
+   #13 = Utf8               LocalVariableTable
+   #14 = Utf8               <init>
+   #15 = Methodref          #3.#16        // java/lang/Object."<init>":()V
+   #16 = NameAndType        #14:#8        // "<init>":()V
+   #17 = Utf8               this
+   #18 = Utf8               Lcom/test/AnnoTest;
+   #19 = Utf8               process
+   #20 = Utf8               (Ljava/lang/Object;)V
+   #21 = Class              #22           // java/util/jar/JarEntry
+   #22 = Utf8               java/util/jar/JarEntry
+   #23 = Methodref          #21.#24       // java/util/jar/JarEntry.getName:()Ljava/lang/String;
+   #24 = NameAndType        #25:#26       // getName:()Ljava/lang/String;
+   #25 = Utf8               getName
+   #26 = Utf8               ()Ljava/lang/String;
+   #27 = Methodref          #21.#28       // java/util/jar/JarEntry.getSize:()J
+   #28 = NameAndType        #29:#30       // getSize:()J
+   #29 = Utf8               getSize
+   #30 = Utf8               ()J
+   #31 = Methodref          #21.#32       // java/util/jar/JarEntry.getCompressedSize:()J
+   #32 = NameAndType        #33:#30       // getCompressedSize:()J
+   #33 = Utf8               getCompressedSize
+   #34 = Utf8               obj
+   #35 = Utf8               Ljava/lang/Object;
+   #36 = Utf8               entry
+   #37 = Utf8               Ljava/util/jar/JarEntry;
+   #38 = Utf8               name
+   #39 = Utf8               Ljava/lang/String;
+   #40 = Utf8               size
+   #41 = Utf8               J
+   #42 = Utf8               compressedSize
+   #43 = Utf8               aaa
+   #44 = Utf8               main
+   #45 = Utf8               ([Ljava/lang/String;)V
+   #46 = Utf8               Exceptions
+   #47 = Class              #48           // java/lang/Exception
+   #48 = Utf8               java/lang/Exception
+   #49 = Class              #50           // java/io/File
+   #50 = Utf8               java/io/File
+   #51 = String             #52           // IDoBLELib-1.0.13.jar
+   #52 = Utf8               IDoBLELib-1.0.13.jar
+   #53 = Methodref          #49.#54       // java/io/File."<init>":(Ljava/lang/String;)V
+   #54 = NameAndType        #14:#55       // "<init>":(Ljava/lang/String;)V
+   #55 = Utf8               (Ljava/lang/String;)V
+   #56 = Fieldref           #57.#59       // java/lang/System.out:Ljava/io/PrintStream;
+   #57 = Class              #58           // java/lang/System
+   #58 = Utf8               java/lang/System
+   #59 = NameAndType        #60:#61       // out:Ljava/io/PrintStream;
+   #60 = Utf8               out
+   #61 = Utf8               Ljava/io/PrintStream;
+   #62 = Methodref          #49.#63       // java/io/File.exists:()Z
+   #63 = NameAndType        #64:#65       // exists:()Z
+   #64 = Utf8               exists
+   #65 = Utf8               ()Z
+   #66 = Methodref          #67.#69       // java/io/PrintStream.println:(Z)V
+   #67 = Class              #68           // java/io/PrintStream
+   #68 = Utf8               java/io/PrintStream
+   #69 = NameAndType        #70:#71       // println:(Z)V
+   #70 = Utf8               println
+   #71 = Utf8               (Z)V
+   #72 = Methodref          #49.#73       // java/io/File.getAbsolutePath:()Ljava/lang/String;
+   #73 = NameAndType        #74:#26       // getAbsolutePath:()Ljava/lang/String;
+   #74 = Utf8               getAbsolutePath
+   #75 = Methodref          #67.#76       // java/io/PrintStream.println:(Ljava/lang/String;)V
+   #76 = NameAndType        #70:#55       // println:(Ljava/lang/String;)V
+   #77 = Class              #78           // java/util/jar/JarFile
+   #78 = Utf8               java/util/jar/JarFile
+   #79 = Methodref          #77.#54       // java/util/jar/JarFile."<init>":(Ljava/lang/String;)V
+   #80 = Methodref          #77.#81       // java/util/jar/JarFile.entries:()Ljava/util/Enumeration;
+   #81 = NameAndType        #82:#83       // entries:()Ljava/util/Enumeration;
+   #82 = Utf8               entries
+   #83 = Utf8               ()Ljava/util/Enumeration;
+   #84 = String             #85           // ?????\t?????§³\t???????§³
+   #85 = Utf8               ?????\t?????§³\t???????§³
+   #86 = String             #87           // yyyyyearMMmonth
+   #87 = Utf8               yyyyyearMMmonth
+   #88 = String             #89           // yyyy
+   #89 = Utf8               yyyy
+   #90 = String             #91           // MM
+   #91 = Utf8               MM
+   #92 = String             #93           // aaa[  {    \"appName\": \"string\",    \"appVersion\": \"string\",    \"createTime\": \"string\",    \"deviceId\": \"string\",    \"ip\": \"string\",\n    \"mobileBrand\": \"string\",    \"os\": 0,\n    \"osVersion\": \"string\",    \"userId\": \"string\"  }]
+   #93 = Utf8               aaa[  {    \"appName\": \"string\",    \"appVersion\": \"string\",    \"createTime\": \"string\",    \"deviceId\": \"string\",    \"ip\": \"string\",\n    \"mobileBrand\": \"string\",    \"os\": 0,\n    \"osVersion\": \"string\",    \"userId\": \"string\"  }]
+   #94 = Methodref          #95.#97       // java/lang/String.indexOf:(Ljava/lang/String;)I
+   #95 = Class              #96           // java/lang/String
+   #96 = Utf8               java/lang/String
+   #97 = NameAndType        #98:#99       // indexOf:(Ljava/lang/String;)I
+   #98 = Utf8               indexOf
+   #99 = Utf8               (Ljava/lang/String;)I
+  #100 = Methodref          #95.#101      // java/lang/String.substring:(II)Ljava/lang/String;
+  #101 = NameAndType        #102:#103     // substring:(II)Ljava/lang/String;
+  #102 = Utf8               substring
+  #103 = Utf8               (II)Ljava/lang/String;
+  #104 = String             #105          // [
+  #105 = Utf8               [
+  #106 = Methodref          #95.#107      // java/lang/String.substring:(I)Ljava/lang/String;
+  #107 = NameAndType        #102:#108     // substring:(I)Ljava/lang/String;
+  #108 = Utf8               (I)Ljava/lang/String;
+  #109 = Class              #110          // java/util/HashMap
+  #110 = Utf8               java/util/HashMap
+  #111 = Methodref          #109.#16      // java/util/HashMap."<init>":()V
+  #112 = String             #113          // 1
+  #113 = Utf8               1
+  #114 = String             #115          // 111111
+  #115 = Utf8               111111
+  #116 = Methodref          #109.#117     // java/util/HashMap.put:(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
+  #117 = NameAndType        #118:#119     // put:(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
+  #118 = Utf8               put
+  #119 = Utf8               (Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
+  #120 = String             #121          // 22222
+  #121 = Utf8               22222
+  #122 = String             #123          // 33333333
+  #123 = Utf8               33333333
+  #124 = Methodref          #109.#125     // java/util/HashMap.get:(Ljava/lang/Object;)Ljava/lang/Object;
+  #125 = NameAndType        #126:#127     // get:(Ljava/lang/Object;)Ljava/lang/Object;
+  #126 = Utf8               get
+  #127 = Utf8               (Ljava/lang/Object;)Ljava/lang/Object;
+  #128 = Methodref          #109.#129     // java/util/HashMap.size:()I
+  #129 = NameAndType        #40:#130      // size:()I
+  #130 = Utf8               ()I
+  #131 = Methodref          #67.#132      // java/io/PrintStream.println:(I)V
+  #132 = NameAndType        #70:#133      // println:(I)V
+  #133 = Utf8               (I)V
+  #134 = String             #135          // 2222
+  #135 = Utf8               2222
+  #136 = Methodref          #109.#137     // java/util/HashMap.containsValue:(Ljava/lang/Object;)Z
+  #137 = NameAndType        #138:#139     // containsValue:(Ljava/lang/Object;)Z
+  #138 = Utf8               containsValue
+  #139 = Utf8               (Ljava/lang/Object;)Z
+  #140 = Methodref          #3.#141       // java/lang/Object.getClass:()Ljava/lang/Class;
+  #141 = NameAndType        #142:#143     // getClass:()Ljava/lang/Class;
+  #142 = Utf8               getClass
+  #143 = Utf8               ()Ljava/lang/Class;
+  #144 = Methodref          #145.#147     // java/lang/Class.getDeclaringClass:()Ljava/lang/Class;
+  #145 = Class              #146          // java/lang/Class
+  #146 = Utf8               java/lang/Class
+  #147 = NameAndType        #148:#143     // getDeclaringClass:()Ljava/lang/Class;
+  #148 = Utf8               getDeclaringClass
+  #149 = Methodref          #67.#150      // java/io/PrintStream.println:(Ljava/lang/Object;)V
+  #150 = NameAndType        #70:#20       // println:(Ljava/lang/Object;)V
+  #151 = Class              #152          // com/test/ISay
+  #152 = Utf8               com/test/ISay
+  #153 = Methodref          #145.#154     // java/lang/Class.getClassLoader:()Ljava/lang/ClassLoader;
+  #154 = NameAndType        #155:#156     // getClassLoader:()Ljava/lang/ClassLoader;
+  #155 = Utf8               getClassLoader
+  #156 = Utf8               ()Ljava/lang/ClassLoader;
+  #157 = Class              #158          // com/test/AnnoTest$1
+  #158 = Utf8               com/test/AnnoTest$1
+  #159 = Methodref          #157.#16      // com/test/AnnoTest$1."<init>":()V
+  #160 = Methodref          #161.#163     // java/lang/reflect/Proxy.newProxyInstance:(Ljava/lang/ClassLoader;[Ljava/lang/Class;Ljava/lang/reflect/InvocationHandler;)Ljava/lang/Object;
+  #161 = Class              #162          // java/lang/reflect/Proxy
+  #162 = Utf8               java/lang/reflect/Proxy
+  #163 = NameAndType        #164:#165     // newProxyInstance:(Ljava/lang/ClassLoader;[Ljava/lang/Class;Ljava/lang/reflect/InvocationHandler;)Ljava/lang/Object;
+  #164 = Utf8               newProxyInstance
+  #165 = Utf8               (Ljava/lang/ClassLoader;[Ljava/lang/Class;Ljava/lang/reflect/InvocationHandler;)Ljava/lang/Object;
+  #166 = InterfaceMethodref #151.#167     // com/test/ISay.sayHello:()Ljava/lang/String;
+  #167 = NameAndType        #168:#26      // sayHello:()Ljava/lang/String;
+  #168 = Utf8               sayHello
+  #169 = InterfaceMethodref #151.#170     // com/test/ISay.sayTo:()Ljava/lang/String;
+  #170 = NameAndType        #171:#26      // sayTo:()Ljava/lang/String;
+  #171 = Utf8               sayTo
+  #172 = Class              #173          // com/test/AnnoTest$2
+  #173 = Utf8               com/test/AnnoTest$2
+  #174 = Methodref          #172.#16      // com/test/AnnoTest$2."<init>":()V
+  #175 = Class              #176          // com/test/MySay
+  #176 = Utf8               com/test/MySay
+  #177 = String             #178          // instanceof
+  #178 = Utf8               instanceof
+  #179 = String             #180          // instanceof false
+  #180 = Utf8               instanceof false
+  #181 = Utf8               args
+  #182 = Utf8               [Ljava/lang/String;
+  #183 = Utf8               file
+  #184 = Utf8               Ljava/io/File;
+  #185 = Utf8               jarFile
+  #186 = Utf8               Ljava/util/jar/JarFile;
+  #187 = Utf8               en
+  #188 = Utf8               Ljava/util/Enumeration;
+  #189 = Utf8               a
+  #190 = Utf8               b
+  #191 = Utf8               c
+  #192 = Utf8               log
+  #193 = Utf8               index
+  #194 = Utf8               index2
+  #195 = Utf8               m
+  #196 = Utf8               map
+  #197 = Utf8               Ljava/util/HashMap;
+  #198 = Utf8               isay
+  #199 = Utf8               Lcom/test/ISay;
+  #200 = Utf8               isay2
+  #201 = Utf8               LocalVariableTypeTable
+  #202 = Utf8               Ljava/util/HashMap<Ljava/lang/String;Ljava/lang/String;>;
+  #203 = Utf8               StackMapTable
+  #204 = Class              #182          // "[Ljava/lang/String;"
+  #205 = Class              #206          // java/util/Enumeration
+  #206 = Utf8               java/util/Enumeration
+  #207 = Utf8               SourceFile
+  #208 = Utf8               AnnoTest.java
+  #209 = Utf8               InnerClasses
+{
+  static {};
+    descriptor: ()V
+    flags: ACC_STATIC
+    Code:
+      stack=1, locals=0, args_size=0
+         0: iconst_1
+         1: putstatic     #10                 // Field i:I
+         4: return
+      LineNumberTable:
+        line 19: 0
+      LocalVariableTable:
+        Start  Length  Slot  Name   Signature
+
+  public com.test.AnnoTest();
+    descriptor: ()V
+    flags: ACC_PUBLIC
+    Code:
+      stack=1, locals=1, args_size=1
+         0: aload_0
+         1: invokespecial #15                 // Method java/lang/Object."<init>":()V
+         4: return
+      LineNumberTable:
+        line 18: 0
+      LocalVariableTable:
+        Start  Length  Slot  Name   Signature
+            0       5     0  this   Lcom/test/AnnoTest;
+
+  public static void main(java.lang.String[]) throws java.lang.Exception;
+    descriptor: ([Ljava/lang/String;)V
+    flags: ACC_PUBLIC, ACC_STATIC
+    Exceptions:
+      throws java.lang.Exception
+    Code:
+      stack=5, locals=14, args_size=1
+         0: new           #49                 // class java/io/File
+         3: dup
+         4: ldc           #51                 // String IDoBLELib-1.0.13.jar
+         6: invokespecial #53                 // Method java/io/File."<init>":(Ljava/lang/String;)V
+         9: astore_1
+        10: getstatic     #56                 // Field java/lang/System.out:Ljava/io/PrintStream;
+        13: aload_1
+        14: invokevirtual #62                 // Method java/io/File.exists:()Z
+        17: invokevirtual #66                 // Method java/io/PrintStream.println:(Z)V
+        20: getstatic     #56                 // Field java/lang/System.out:Ljava/io/PrintStream;
+        23: aload_1
+        24: invokevirtual #72                 // Method java/io/File.getAbsolutePath:()Ljava/lang/String;
+        27: invokevirtual #75                 // Method java/io/PrintStream.println:(Ljava/lang/String;)V
+        30: new           #77                 // class java/util/jar/JarFile
+        33: dup
+        34: aload_1
+        35: invokevirtual #72                 // Method java/io/File.getAbsolutePath:()Ljava/lang/String;
+        38: invokespecial #79                 // Method java/util/jar/JarFile."<init>":(Ljava/lang/String;)V
+        41: astore_2
+        42: aload_2
+        43: invokevirtual #80                 // Method java/util/jar/JarFile.entries:()Ljava/util/Enumeration;
+        46: astore_3
+        47: getstatic     #56                 // Field java/lang/System.out:Ljava/io/PrintStream;
+        50: ldc           #84                 // String ?????\t?????§³\t???????§³
+        52: invokevirtual #75                 // Method java/io/PrintStream.println:(Ljava/lang/String;)V
+        55: ldc           #86                 // String yyyyyearMMmonth
+        57: astore        4
+        59: ldc           #88                 // String yyyy
+        61: astore        5
+        63: ldc           #90                 // String MM
+        65: astore        6
+        67: ldc           #92                 // String aaa[  {    \"appName\": \"string\",    \"appVersion\": \"string\",    \"createTime\": \"string\",    \"deviceId\": \"string\",    \"ip\": \"string\",\n    \"mobileBrand\": \"string\",    \"os\": 0,\n    \"osVersion\": \"string\",    \"userId\": \"string\"  }]
+        69: astore        7
+        71: aload         4
+        73: aload         5
+        75: invokevirtual #94                 // Method java/lang/String.indexOf:(Ljava/lang/String;)I
+        78: istore        8
+        80: aload         4
+        82: aload         6
+        84: invokevirtual #94                 // Method java/lang/String.indexOf:(Ljava/lang/String;)I
+        87: istore        9
+        89: aload         4
+        91: iconst_4
+        92: iload         9
+        94: invokevirtual #100                // Method java/lang/String.substring:(II)Ljava/lang/String;
+        97: astore        10
+        99: getstatic     #56                 // Field java/lang/System.out:Ljava/io/PrintStream;
+       102: aload         7
+       104: iconst_0
+       105: aload         7
+       107: ldc           #104                // String [
+       109: invokevirtual #94                 // Method java/lang/String.indexOf:(Ljava/lang/String;)I
+       112: invokevirtual #100                // Method java/lang/String.substring:(II)Ljava/lang/String;
+       115: invokevirtual #75                 // Method java/io/PrintStream.println:(Ljava/lang/String;)V
+       118: getstatic     #56                 // Field java/lang/System.out:Ljava/io/PrintStream;
+       121: aload         7
+       123: aload         7
+       125: ldc           #104                // String [
+       127: invokevirtual #94                 // Method java/lang/String.indexOf:(Ljava/lang/String;)I
+       130: invokevirtual #106                // Method java/lang/String.substring:(I)Ljava/lang/String;
+       133: invokevirtual #75                 // Method java/io/PrintStream.println:(Ljava/lang/String;)V
+       136: new           #109                // class java/util/HashMap
+       139: dup
+       140: invokespecial #111                // Method java/util/HashMap."<init>":()V
+       143: astore        11
+       145: aload         11
+       147: ldc           #112                // String 1
+       149: ldc           #114                // String 111111
+       151: invokevirtual #116                // Method java/util/HashMap.put:(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
+       154: pop
+       155: aload         11
+       157: ldc           #112                // String 1
+       159: ldc           #120                // String 22222
+       161: invokevirtual #116                // Method java/util/HashMap.put:(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
+       164: pop
+       165: aload         11
+       167: ldc           #112                // String 1
+       169: ldc           #122                // String 33333333
+       171: invokevirtual #116                // Method java/util/HashMap.put:(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
+       174: pop
+       175: getstatic     #56                 // Field java/lang/System.out:Ljava/io/PrintStream;
+       178: aload         11
+       180: ldc           #112                // String 1
+       182: invokevirtual #124                // Method java/util/HashMap.get:(Ljava/lang/Object;)Ljava/lang/Object;
+       185: checkcast     #95                 // class java/lang/String
+       188: invokevirtual #75                 // Method java/io/PrintStream.println:(Ljava/lang/String;)V
+       191: getstatic     #56                 // Field java/lang/System.out:Ljava/io/PrintStream;
+       194: aload         11
+       196: invokevirtual #128                // Method java/util/HashMap.size:()I
+       199: invokevirtual #131                // Method java/io/PrintStream.println:(I)V
+       202: getstatic     #56                 // Field java/lang/System.out:Ljava/io/PrintStream;
+       205: aload         11
+       207: ldc           #134                // String 2222
+       209: invokevirtual #136                // Method java/util/HashMap.containsValue:(Ljava/lang/Object;)Z
+       212: invokevirtual #66                 // Method java/io/PrintStream.println:(Z)V
+       215: getstatic     #56                 // Field java/lang/System.out:Ljava/io/PrintStream;
+       218: aload         11
+       220: invokevirtual #140                // Method java/lang/Object.getClass:()Ljava/lang/Class;
+       223: invokevirtual #144                // Method java/lang/Class.getDeclaringClass:()Ljava/lang/Class;
+       226: invokevirtual #149                // Method java/io/PrintStream.println:(Ljava/lang/Object;)V
+       229: ldc           #151                // class com/test/ISay
+       231: invokevirtual #153                // Method java/lang/Class.getClassLoader:()Ljava/lang/ClassLoader;
+       234: iconst_1
+       235: anewarray     #145                // class java/lang/Class
+       238: dup
+       239: iconst_0
+       240: ldc           #151                // class com/test/ISay
+       242: aastore
+       243: new           #157                // class com/test/AnnoTest$1
+       246: dup
+       247: invokespecial #159                // Method com/test/AnnoTest$1."<init>":()V
+       250: invokestatic  #160                // Method java/lang/reflect/Proxy.newProxyInstance:(Ljava/lang/ClassLoader;[Ljava/lang/Class;Ljava/lang/reflect/InvocationHandler;)Ljava/lang/Object;
+       253: checkcast     #151                // class com/test/ISay
+       256: astore        12
+       258: getstatic     #56                 // Field java/lang/System.out:Ljava/io/PrintStream;
+       261: aload         12
+       263: invokeinterface #166,  1          // InterfaceMethod com/test/ISay.sayHello:()Ljava/lang/String;
+       268: invokevirtual #75                 // Method java/io/PrintStream.println:(Ljava/lang/String;)V
+       271: getstatic     #56                 // Field java/lang/System.out:Ljava/io/PrintStream;
+       274: aload         12
+       276: invokeinterface #169,  1          // InterfaceMethod com/test/ISay.sayTo:()Ljava/lang/String;
+       281: invokevirtual #75                 // Method java/io/PrintStream.println:(Ljava/lang/String;)V
+       284: new           #172                // class com/test/AnnoTest$2
+       287: dup
+       288: invokespecial #174                // Method com/test/AnnoTest$2."<init>":()V
+       291: astore        13
+       293: aload         13
+       295: instanceof    #175                // class com/test/MySay
+       298: ifeq          312
+       301: getstatic     #56                 // Field java/lang/System.out:Ljava/io/PrintStream;
+       304: ldc           #177                // String instanceof
+       306: invokevirtual #75                 // Method java/io/PrintStream.println:(Ljava/lang/String;)V
+       309: goto          320
+       312: getstatic     #56                 // Field java/lang/System.out:Ljava/io/PrintStream;
+       315: ldc           #179                // String instanceof false
+       317: invokevirtual #75                 // Method java/io/PrintStream.println:(Ljava/lang/String;)V
+       320: return
+      LineNumberTable:
+        line 45: 0
+        line 46: 10
+        line 47: 20
+        line 49: 30
+        line 50: 42
+        line 51: 47
+        line 56: 55
+        line 57: 59
+        line 58: 63
+        line 59: 67
+        line 73: 71
+        line 74: 80
+        line 75: 89
+        line 76: 99
+        line 77: 118
+        line 93: 136
+        line 94: 145
+        line 95: 155
+        line 96: 165
+        line 98: 175
+        line 99: 191
+        line 100: 202
+        line 101: 215
+        line 103: 229
+        line 112: 258
+        line 113: 271
+        line 115: 284
+        line 129: 293
+        line 130: 301
+        line 131: 309
+        line 132: 312
+        line 134: 320
+      LocalVariableTable:
+        Start  Length  Slot  Name   Signature
+            0     321     0  args   [Ljava/lang/String;
+           10     311     1  file   Ljava/io/File;
+           42     279     2 jarFile   Ljava/util/jar/JarFile;
+           47     274     3    en   Ljava/util/Enumeration;
+           59     262     4     a   Ljava/lang/String;
+           63     258     5     b   Ljava/lang/String;
+           67     254     6     c   Ljava/lang/String;
+           71     250     7   log   Ljava/lang/String;
+           80     241     8 index   I
+           89     232     9 index2   I
+           99     222    10     m   Ljava/lang/String;
+          145     176    11   map   Ljava/util/HashMap;
+          258      63    12  isay   Lcom/test/ISay;
+          293      28    13 isay2   Lcom/test/ISay;
+      LocalVariableTypeTable:
+        Start  Length  Slot  Name   Signature
+          145     176    11   map   Ljava/util/HashMap<Ljava/lang/String;Ljava/lang/String;>;
+      StackMapTable: number_of_entries = 2
+        frame_type = 255 /* full_frame */
+          offset_delta = 312
+          locals = [ class "[Ljava/lang/String;", class java/io/File, class java/util/jar/JarFile, class java/util/Enumeration, class java/lang/String, class java/lang/String, class java/lang/String, class java/lang/String, int, int, class java/lang/String, class java/util/HashMap, class com/test/ISay, class com/test/ISay ]
+          stack = []
+        frame_type = 7 /* same */
+}
+SourceFile: "AnnoTest.java"
+InnerClasses:
+     #157; //class com/test/AnnoTest$1
+     #172; //class com/test/AnnoTest$2

@@ -1,0 +1,132 @@
+task hello{
+		doLast{
+			println 'hello world'
+		}
+}
+task printlnStr <<{
+	def str1='单引号'
+	def str2='双引号'
+	
+	println '单引号类型：'+str1.getClass().name
+	println '双引号类型：'+str2.getClass().name
+	
+	def name="张三"
+	println '单引号变量：${name}'
+	println "双引号变量：${name}"
+}
+
+task printList <<{
+	def numList=[1,2,3,4,5];
+	println numList.getClass().name
+	
+	println numList[1] //访问第二个元素
+	println numList[-1] //访问最后一个元素
+	println numList[1..3] //访问第二个元素到第四个元素
+	numList.each{
+		println it
+	}
+}
+
+task printMap <<{
+	def map=['w':123,'h':456];
+	println map.getClass().name
+	
+	println map['w'] 
+	println map.h 
+	
+	map.each{
+		println "key:${it.key},value:${it.value}"
+	}
+}
+
+task testMethod <<{
+	add(1,2){
+		println it
+	}
+	//add 1,2
+	def result=method2 1,2
+	println "result:$result";
+}
+def add(int a,int b,closure){
+	closure(9)
+	println a+b 
+}
+
+def method2(int a,int b){
+	a+b
+}
+
+task testClosure <<{
+	customEach{
+		println it
+	}
+}
+def customEach(closure){
+	for(int i in i..10){
+		closure(i)
+	}
+}
+
+
+task testClosure2 <<{
+	eachMap{
+		k,v -> println "${k} is ${v}"
+	}
+}
+def eachMap(closure){
+	def map=['w':123,'h':456];
+	map.each{
+		closure(it.key,it.value)
+	}
+}
+
+
+task testDelegate <<{
+	new Delegate().test{
+		println "thisObject:${thisObject.getClass()}"
+		println "owner:${owner.getClass()}"
+		println "delegate:${delegate.getClass()}"
+		
+		method1()
+		it.method1()
+	}
+}
+def method1(){
+	println "this:${this.getClass()} in root"
+	println "method1 in root"
+}
+class Delegate{
+	def method1(){
+		println "this:${this.getClass()} in Delegate"
+		println "method1 in Delegate"
+	}
+	def test(Closure<Delegate> closure){
+		closure(this)
+	}
+}
+
+
+
+
+task configClosure <<{
+
+	person{
+		name="张三"
+		age=18
+		dumpPerson()
+	}
+
+}
+class Person{
+	String name
+	int age
+	def dumpPerson(){
+		println "name is ${name},age is ${age}"
+	}
+	
+}
+def person(Closure<Person> closure){
+	Person p=new Person()
+	closure.delegate=p
+	closure(p)
+}
